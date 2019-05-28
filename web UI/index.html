@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset = "utf-8">
+<link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
+<head>
+    <title>PRA - Tres en ratlla</title>
+</head>
+<script src = "./UI.js"></script>
+
+<body>
+    <h1 class = "titol">Tres en ratlla</h1>
+
+    <div id = "button-wrapper">
+        <button class = "reinicia" onclick = "start()">Reinicia el joc</button>
+        <button class = "esborra" onclick = "clearRegisters()"> Esborra historial</button>
+    </div>
+    
+    <div id = "alert"></div>
+    <div id = "victoria"></div>
+
+    <div id = "tauler">
+
+
+        <div id = "fil1">
+            <div class = "cell" id = "fil1-col1" onclick = "tiradaManager(Jugador,0,0)"></div>
+            <div class = "cell" id = "fil1-col2" onclick = "tiradaManager(Jugador,0,1)"></div>
+            <div id = "fil1-col3" class = "cell" onclick = "tiradaManager(Jugador,0,2)"></div>
+        </div>
+        <div id = "fil2">
+            <div id = "fil2-col1" class = "cell" onclick = "tiradaManager(Jugador,1,0)"></div>
+            <div id = "fil2-col2" class = "cell" onclick = "tiradaManager(Jugador,1,1)"></div>
+            <div id = "fil2-col3" class = "cell" onclick = "tiradaManager(Jugador,1,2)"></div>
+        </div>
+        <div id = "fil3">
+            <div id = "fil3-col1" class = "cell" onclick = "tiradaManager(Jugador,2,0)"></div>
+            <div id = "fil3-col2" class = "cell" onclick = "tiradaManager(Jugador,2,1)"></div>
+            <div id = "fil3-col3" class = "cell" onclick = "tiradaManager(Jugador,2,2)"></div>
+        </div>
+    </div>
+    <div class = "historic">
+        <div class = "cross little"></div><div id = "registre"></div><div class = "circle little little"></div>
+    </div>
+</body>

@@ -1,0 +1,136 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+h1.titol{
+    font-size: 30pt;
+}
+
+#button-wrapper{
+    display: block;
+}
+
+#victoria{
+    height: 25px;
+    color: #2e8a2e;
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#alert{
+    height: 25px;
+    color: #ff0000c9;
+    font-size: larger;
+    font-weight: 500;
+}
+
+button{
+    padding: 15px;
+    border: none;
+    margin: 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size:large;
+    background-color: #00000094;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.historic{
+    display: flex;
+    align-items: center;
+}
+
+#registre{
+    margin:25px;
+    border-bottom: 0.5px solid #ff0000c9
+}
+
+#tauler{
+
+}
+
+#fil1-col1, #fil1-col2, #fil1-col3, #fil2-col1, #fil2-col2, #fil2-col3,#fil3-col1, #fil3-col2, #fil3-col3 {
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+#fil1{
+    display: flex;
+}
+    #fil1-col1, #fil1-col2, #fil2-col1, #fil2-col2, #fil3-col1, #fil3-col2{
+        border-right: 2px solid black;
+    }
+
+    #fil1-col3, #fil1-col2, #fil2-col3, #fil2-col2, #fil3-col3, #fil3-col2{
+        border-left: 2px solid black;
+    }
+
+    #fil1-col3, #fil1-col1, #fil1-col2, #fil2-col3, #fil2-col2,#fil2-col1{
+        border-bottom: 2px solid black;
+    }
+
+    #fil2-col1, #fil2-col2, #fil3-col1, #fil3-col2, #fil3-col3, #fil2-col3{
+        border-top: 2px solid black;
+    }
+#fil2{
+    display: flex;
+}
+
+
+
+#fil3{
+    display:flex;
+}
+
+.cross {
+    position: relative;
+    width: 105px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform:scale(4.5); */
+  }
+
+  .cross:hover{
+      cursor: pointer;
+  }
+
+  .cross:before, .cross:after {
+    position: absolute;
+    /* left: 15px; */
+    content: ' ';
+    height: 150px;
+    width: 9px;
+    background-color: #333;
+  }
+  .cross:before {
+    transform: rotate(45deg);
+  }
+  .cross:after {
+    transform: rotate(-45deg);
+  }
+
+.circle{
+    border: 9px solid #ff0000c9;
+    border-radius: 100%;
+    width:105px;
+    height: 105px;
+
+}
+
+.little{
+    margin: -5px;
+    transform: scale(0.2);
+}
