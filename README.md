@@ -2,4 +2,4 @@
 
 <p>Pràctica de l'assignatura "Programació web"</p>
 
-Tic-tac-toe game written in pure HTML, CSS & JS
+Tic-tac-toe game written in vanilla HTML, CSS & JS
